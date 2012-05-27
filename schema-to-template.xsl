@@ -8,6 +8,7 @@
             <xsl:namespace name="xsl" select="'http://www.w3.org/1999/XSL/Transform'" />
             <xsl:namespace name="xs" select="'http://www.w3.org/2001/XMLSchema'" />
             <xsl:attribute name="version" select="'2.0'" />
+            <xsl:attribute name="exclude-result-prefixes" select="'#all'" />
 
             <xsl:element name="xsl:template">
                 <xsl:attribute name="name" select="'write-solr-doc'" />
