@@ -122,7 +122,7 @@
                         <xsl:attribute name="test" select="concat('$', $name)" />
                         <field name="{$name}">
                             <xsl:element name="xsl:copy-of">
-                                <xsl:attribute name="select" select="$name" />
+                                <xsl:attribute name="select" select="concat('$', $name)" />
                             </xsl:element>
                         </field>
                     </xsl:element>
@@ -130,7 +130,7 @@
                 <xsl:otherwise>
                     <field name="{$name}">
                         <xsl:element name="xsl:copy-of">
-                            <xsl:attribute name="select" select="$name" />
+                            <xsl:attribute name="select" select="concat('$', $name)" />
                         </xsl:element>
                     </field>
                 </xsl:otherwise>
