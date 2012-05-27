@@ -119,7 +119,7 @@
                 </xsl:when>
                 <xsl:when test="$seq-type = '?'">
                     <xsl:element name="xsl:if">
-                        <xsl:attribute name="test" select="concat('$', $name)" />
+                        <xsl:attribute name="test" select="concat('$', $name, '!=()')" />
                         <field name="{$name}">
                             <xsl:element name="xsl:copy-of">
                                 <xsl:attribute name="select" select="concat('$', $name)" />
